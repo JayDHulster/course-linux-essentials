@@ -187,17 +187,41 @@ Find all the info you need in the man-pages. Make sure to comment the commands y
 
 Mark challenges using a ✅ once they are finished.
 
-### ❌ The free command
+### ✅ The free command
 
 *Describe in your own words what the `free` command does. Give an example and a partial output.*
 
-### ❌ The id command
+I believe free shows how much memory is available to the user
+
+Input: `free`
+
+Output:
+```
+              total        used        free      shared  buff/cache   available
+Mem:       16653564     7221664     9202548       17720      229352     9298168
+Swap:      31095676       80952    31014724
+```
+
+### ✅ The id  command
 
 *Describe in your own words what the `id` command does. Give an example and a partial output.*
 
-### ❌ The tree command
+Displays id of current user.
+
+Input: `id`
+
+Output:
+```
+uid=1000(sfyri) gid=1000(sfyri) groups=1000(sfyri),4(adm),20(dialout),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),117(netdev)
+```
+
+### ✅ The tree command
 
 *Describe in your own words what the `tree` command does. How do you list all subdirectories too? How can you only include directories? If the `tree` command is not available on your system you can install it using `sudo apt install tree`*
+
+It should show the entire file structure of a system with branches etc. (I used it before on windows to do hollywood hacker type spectacles)
+
+Only show directories? => `tree -d`
 
 ### ❌ The which command
 

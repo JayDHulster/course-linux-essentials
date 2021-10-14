@@ -386,9 +386,11 @@ the shell?
 *Create a group called `hackers` with the specific group id `1337`. Now create two users (students from the class) and add them both the group.*
 
 Make group
+
 `sudo addgroup -gid 1337 hackers`
 
 Make 2 users
+
 `sudo useradd john -m -c "John Rambo,,," -s "/bin/bash"`
 `sudo passwd john`
 
@@ -396,7 +398,9 @@ Make 2 users
 `sudo passwd jim`
 
 Add them both
+
 `sudo usermod -aG hackers john`
+
 `sudo usermod -aG hackers jim`
 
 ### ✅ Difference false and nologin
@@ -417,7 +421,6 @@ nologin is the more user-friendly option, with a customizable message given to t
 
 *What does the file `/log/var/auth.log` track? Provide an example of a command that shows entries being added to the log after you executed the command. Include the entry here that was added to the file.*
 
-<<<<<<< HEAD
 The file does not exist on my PC however.
 
 ::: auth.log file

@@ -407,7 +407,7 @@ Add them both
 
 *Some user entries are showing `/bin/false` as the shell command. Do some research and explain what the difference is with `/usr/sbin/nologin`.*
 
-::: /bin/false Vs. /usr/sbin/nologin
+::: tip /bin/false Vs. /usr/sbin/nologin
 When /sbin/nologin is set as the shell, if user with that shell logs in, they'll get a polite message saying 'This account is currently not available.' This message can be changed with the file /etc/nologin.txt.
 
 /bin/false is just a binary that immediately exits, returning false, when it's called, so when someone who has false as shell logs in, they're immediately logged out when false exits. Setting the shell to /bin/true has the same effect of not allowing someone to log in but false is probably used as a convention over true since it's much better at conveying the concept that person doesn't have a shell.
@@ -423,7 +423,7 @@ nologin is the more user-friendly option, with a customizable message given to t
 
 The file does not exist on my PC however.
 
-::: auth.log file
+::: tip Auth log
 The Authorization Log tracks usage of authorization systems, the mechanisms for authorizing users which prompt for user passwords, such as the Pluggable Authentication Module (PAM) system, the sudo command, remote logins to sshd and so on. The Authorization Log file may be accessed at /var/log/auth.log. This log is useful for learning about user logins and usage of the sudo command. 
 :::
 

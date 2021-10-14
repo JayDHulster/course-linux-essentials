@@ -367,21 +367,55 @@ Try to solve the challenges without using google. Better to use the man-pages to
 
 Mark challenges using a ✅ once they are finished.
 
-### ❌ System user accounts
+### ✅ System user accounts
 
 *Try to login to the `daemon` system user account. Use `sudo su daemon`. What does it display as a message ? What application is outputting this message ? Run that application and prove it.*
 
-### ❌ Creating group with id
+`This account is currently not available.`
+
+the shell?
+
+### ✅ Creating group with id
 
 *Create a group called `hackers` with the specific group id `1337`. Now create two users (students from the class) and add them both the group.*
 
-### ❌ Difference false and nologin
+Make group
+`sudo addgroup -gid 1337 hackers`
+
+Make 2 users
+`sudo useradd john -m -c "John Rambo,,," -s "/bin/bash"`
+`sudo passwd john`
+
+`sudo useradd jim -m -c "Jim Rambo,,," -s "/bin/bash"`
+`sudo passwd jim`
+
+Add them both
+`sudo usermod -aG hackers john`
+`sudo usermod -aG hackers jim`
+
+### ✅ Difference false and nologin
 
 *Some user entries are showing `/bin/false` as the shell command. Do some research and explain what the difference is with `/usr/sbin/nologin`.*
 
-### ❌ The auth.log file 
+::: /bin/false Vs. /usr/sbin/nologin
+When /sbin/nologin is set as the shell, if user with that shell logs in, they'll get a polite message saying 'This account is currently not available.' This message can be changed with the file /etc/nologin.txt.
+
+/bin/false is just a binary that immediately exits, returning false, when it's called, so when someone who has false as shell logs in, they're immediately logged out when false exits. Setting the shell to /bin/true has the same effect of not allowing someone to log in but false is probably used as a convention over true since it's much better at conveying the concept that person doesn't have a shell.
+
+Looking at nologin's man page, it says it was created in 4.4 BSD (early 1990s) so it came long after false was created. The use of false as a shell is probably just a convention carried over from the early days of UNIX.
+
+nologin is the more user-friendly option, with a customizable message given to the user trying to log in, so you would theoretically want to use that; but both nologin and false will have the same end result of someone not having a shell and not being able to ssh in.
+:::
+
+### ✅ The auth.log file 
 
 *What does the file `/log/var/auth.log` track? Provide an example of a command that shows entries being added to the log after you executed the command. Include the entry here that was added to the file.*
+
+The file does not exist on my PC however.
+
+::: auth.log file
+The Authorization Log tracks usage of authorization systems, the mechanisms for authorizing users which prompt for user passwords, such as the Pluggable Authentication Module (PAM) system, the sudo command, remote logins to sshd and so on. The Authorization Log file may be accessed at /var/log/auth.log. This log is useful for learning about user logins and usage of the sudo command. 
+:::
 
 <!-- ### ❌ Expiring a Users Password -->
 

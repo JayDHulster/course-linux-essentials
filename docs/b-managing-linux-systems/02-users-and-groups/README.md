@@ -443,9 +443,13 @@ The Authorization Log tracks usage of authorization systems, the mechanisms for 
 
 `passwd -l steve`
 
-### ❌ Zsh Shell
+### ✅ Zsh Shell
 
 *Install the zsh shell on your system. Now change your own shell to `zsh`. Make sure to do this in such a way that a new session will also use `zsh`.*
+
+![afbeelding](https://user-images.githubusercontent.com/71697142/141441051-d2392c24-826d-4508-b29b-759b31d24c86.png)
+
+(image of install lost out of clipboard)
 
 ### ✅ Semester Account
 

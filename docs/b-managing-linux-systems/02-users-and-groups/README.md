@@ -429,17 +429,30 @@ The Authorization Log tracks usage of authorization systems, the mechanisms for 
 
 <!-- ### ❌ Expiring a Users Password -->
 =======
-### ❌ Locking out Steve
+### ✅ Locking out Steve
 
 *Create a new user steve and set a password for the user. Login to the `steve` account using `su` to make sure it works.*
 
+`sudo useradd steve -m -c "Steve,,," -s "/bin/bash"`
+
+`sudo passwd steve`
+
+`su steve`
+
 *Now lock the user account and make sure there is no way anyone can login as `steve`, not even `root`*
+
+`passwd -l steve`
 
 ### ❌ Zsh Shell
 
 *Install the zsh shell on your system. Now change your own shell to `zsh`. Make sure to do this in such a way that a new session will also use `zsh`.*
 
-### ❌ Semester Account
->>>>>>> 377021f96bd480880ed48ccb982bf6bee250749f
+### ✅ Semester Account
 
 *Create a new account for an exchange student called `maggie`. Make sure the account can only be used until 31st of January of the next year. Basically only for this semester*.
+
+`sudo useradd maggie -m -c "Maggie,,," -s "/bin/bash"`
+
+`sudo passwd maggie`
+
+`sudo usermod --expiredate 2022-01-31 maggie`

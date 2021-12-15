@@ -243,13 +243,14 @@ Only show directories? => `tree -d`
 
 *How can you download a file from the Internet using the command line?. Find a file online to use it on and demonstrate its usage.*
 
-### ❌ The dmesg command
+### ✅ The dmesg command
 
 *Describe in your own words what the `dmesg` command does. Give an example and a partial output.*
 
 `dmesg` shows you the kernel messages for in a ssh terminal.
 
-![afbeelding](https://user-images.githubusercontent.com/71697142/146266114-cf3bed8a-e1a3-4106-9ae5-247d3eed2f69.png)
+![afbeelding](https://user-images.githubusercontent.com/71697142/146267274-2329cf4a-8aeb-4b43-afe1-acd90077eff4.png)
+
 
 ### ❌ Checksums
 

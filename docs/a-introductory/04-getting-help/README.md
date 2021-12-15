@@ -247,7 +247,7 @@ Only show directories? => `tree -d`
 
 *Describe in your own words what the `dmesg` command does. Give an example and a partial output.*
 
-`dmesg` shows you whats in the kernel buffer.
+`dmesg` shows you the kernel messages for in a ssh terminal.
 
 ![afbeelding](https://user-images.githubusercontent.com/71697142/146266114-cf3bed8a-e1a3-4106-9ae5-247d3eed2f69.png)
 

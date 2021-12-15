@@ -247,6 +247,8 @@ Only show directories? => `tree -d`
 
 *Describe in your own words what the `dmesg` command does. Give an example and a partial output.*
 
+`dmesg` shows you whats in the kernel buffer.
+
 ### ❌ Checksums
 
 *Go to the website of Raspberry Pi - [https://www.raspberrypi.org/software/operating-systems](https://www.raspberrypi.org/software/operating-systems) and download the Raspberry Pi OS image using the `wget` command line tool. Now check if the SHA-256 checksum complies with the one being advertised on the website.*
@@ -255,13 +257,17 @@ Only show directories? => `tree -d`
 
 *What is the use of this hash?*
 
-### ❌ The printenv command
+### ✅ The printenv command
 
 *Describe in your own words what the `printenv` command does.*
 
-### ❌ IP Address
+It allows you to see all environment variables like the paths etc by printing them.
+
+### ✅ IP Address
 
 *Find the IP address of your WiFi interface. What command did you use?*
+
+`ifconfig`
 
 ### ❌ IP of Sivir Server
 

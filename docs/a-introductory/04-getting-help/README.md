@@ -249,6 +249,8 @@ Only show directories? => `tree -d`
 
 `dmesg` shows you whats in the kernel buffer.
 
+![afbeelding](https://user-images.githubusercontent.com/71697142/146266114-cf3bed8a-e1a3-4106-9ae5-247d3eed2f69.png)
+
 ### ❌ Checksums
 
 *Go to the website of Raspberry Pi - [https://www.raspberrypi.org/software/operating-systems](https://www.raspberrypi.org/software/operating-systems) and download the Raspberry Pi OS image using the `wget` command line tool. Now check if the SHA-256 checksum complies with the one being advertised on the website.*
